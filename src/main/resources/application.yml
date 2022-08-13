@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: servicio-socios
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/socios_mantenimiento
+
+server:
+  port: 8092
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+            defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost     
+    
+
+
