@@ -60,7 +60,7 @@ public class SocioController {
 		return ResponseEntity.ok().build();
 	}
 
-	@PatchMapping("/socios/estado/{dni}/{estado}")
+	@PostMapping("/socios/estado/{dni}/{estado}")
 	public ResponseEntity<Void> modificarEstadoSocio(
 			@PathVariable String dni, @PathVariable String estado)	{
 		var socioResponse = socioRepository.findById(dni).orElseThrow();
