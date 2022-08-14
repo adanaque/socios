@@ -1,6 +1,6 @@
 spring:
   application:
-    name: servicio-socios
+    name: man-socios
   data:
     mongodb:
       uri: mongodb://localhost:27017/socios_mantenimiento
